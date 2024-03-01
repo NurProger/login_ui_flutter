@@ -124,10 +124,10 @@ class _SignInScreenState extends State<SignUpScreen> {
                       child: RichText(
                           text: const TextSpan(
                               text: "By checking the box you agree to our",
-                              style: TextStyle(fontSize: 12),
+                              style: TextStyle(fontSize: 12,color: Colors.black),
                               children: [
                                 TextSpan(
-                                    text: " Terms ",
+                                    text: "  Terms ",
                                     style: TextStyle(color: Color.fromARGB(255, 255, 118, 134)),
                                     children: [
                                       TextSpan(
@@ -159,6 +159,7 @@ class _SignInScreenState extends State<SignUpScreen> {
                     RichText(
                         text: const TextSpan(
                             text: "Already a member? ",
+                            style: TextStyle(color: Colors.black),
                             children: [
                               TextSpan(
                                   text: "Log In",
