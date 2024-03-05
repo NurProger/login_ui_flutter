@@ -38,20 +38,19 @@ class _SignInScreenState extends State<SignUpScreen> {
               Container(
                   child: Column(
                 children: [
-                  TextFormFieldComponents().TextFormFieldWidget("Full name"),
+                  TextFormFieldComponents().TextFormFieldWidget("Full name", Icon(Icons.account_circle_rounded), false),
                   SizedBox(
                     height: 30,
                   ),
-                  TextFormFieldComponents().TextFormFieldWidget("Valid email"),
+                  TextFormFieldComponents().TextFormFieldWidget("Valid email", Icon(Icons.email_outlined), false),
                   SizedBox(
                     height: 30,
                   ),
-                  TextFormFieldComponents().TextFormFieldWidgetForNumber("Phone number"),
+                  TextFormFieldComponents().TextFormFieldWidget("Phone number", Icon(Icons.phone_android_outlined), false),
                   SizedBox(
                     height: 30,
                   ),
-                  TextFormFieldComponents()
-                      .TextFormFieldWidgetForPassword("Strong password"),
+                  TextFormFieldComponents().TextFormFieldWidget("Strong password", Icon(Icons.lock_outline_sharp), true),
                   Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: RichText(

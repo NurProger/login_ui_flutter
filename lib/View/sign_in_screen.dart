@@ -43,11 +43,11 @@ class _SignInScreenState extends State<SignInScreen> {
               Container(
                   child: Column(
                 children: [
-                  TextFormFieldComponents().TextFormFieldWidget("Enter your email"),
+                  TextFormFieldComponents().TextFormFieldWidget("Enter your email",Icon(Icons.email_outlined), false),
                   SizedBox(
                     height: 40,
                   ),
-                  TextFormFieldComponents().TextFormFieldWidgetForPassword("Password"),
+                  TextFormFieldComponents().TextFormFieldWidget("Password",Icon(Icons.lock_outline_sharp), true ),
                   Padding(
                     padding: const EdgeInsets.all(5.0),
                     child: Row(
